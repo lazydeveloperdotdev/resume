@@ -140,7 +140,11 @@
     window.addEventListener("resize", _watchSize);
 
     const _toggleStyle = () => {
-        window.location.replace(window.location.hostname + "/style2");
+        let host = window.location.hostname;
+        if (!(host.startsWith("https://") || host.startsWith("http://"))) {
+            host = "https://" + host;
+        }
+        window.location.replace(host + "/style2");
     }
 
 </script>
