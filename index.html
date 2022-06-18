@@ -97,7 +97,7 @@
         <div class="clear"></div>
     </section>
 </div>
-<a class="float-button" href="https://rajyadavnp.github.io/resume/style2">Style 2</a>
+<a class="float-button" href="javascript:_toggleStyle()">Style 2</a>
 <script src="data.js"></script>
 <script src="script.js"></script>
 <script>
@@ -139,6 +139,9 @@
 
     window.addEventListener("resize", _watchSize);
 
+    const _toggleStyle = () => {
+        window.location.replace(window.location.hostname + "/style2");
+    }
 
 </script>
 

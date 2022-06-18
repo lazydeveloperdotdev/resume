@@ -80,7 +80,8 @@
         <div class="container-inner"></div>
     </section>
 </div>
-<a class="float-button" href="https://rajyadavnp.github.io/resume/">Style 1</a>
+
+<a class="float-button" href="javascript:_toggleStyle()">Style 1</a>
 
 <script src="../data.js"></script>
 <script src="script.js"></script>
@@ -109,6 +110,9 @@
             }, 500)
         }, 1000);
     };
+    const _toggleStyle = () => {
+        window.location.replace(window.location.hostname);
+    }
 </script>
 
 </body>
