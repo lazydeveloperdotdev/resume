@@ -152,6 +152,7 @@ const skills = [
     }
 ];
 
+
 const languages = [
     {
         icon: "A",

@@ -106,6 +106,7 @@ const buildBottomHeader = (userDetails) => {
     }
     element.innerHTML = html;
 }
+
 const buildSkills = (skills) => {
     let element = document.querySelector(".skill-set");
     let html = "<h2>Skills</h2>";
@@ -137,6 +138,26 @@ const buildSkills = (skills) => {
     }
     element.innerHTML = html;
 }
+
+const buildStrengths = (strengths) => {
+    let element = document.querySelector(".strengths");
+    let html = "<h2>Strengths</h2>";
+    for (let i = 0; i < strengths.length; i++) {
+
+        if (printBreak === true) {
+            html += "<div class='break extra-margin'></div>" +
+                "<h2>Strengths</h2>";
+        }
+
+        for (let x = 0; x < tech.length; x++) {
+            html += "<li>" + strengths[x] + "</li>";
+        }
+
+
+    }
+    element.innerHTML = html;
+}
+
 const buildLanguages = (languages) => {
     let element = document.querySelector(".languages");
     let html = "<h2>Languages</h2>";
