@@ -66,13 +66,6 @@ const skills = [
         lib: ["RxJava", "Room", "Dagger", "LiveData", "Retrofit", "Firebase"]
     },
     {
-        icon: "fab fa-apple",
-        title: "iOS",
-        scale: 3,
-        tech: ["Swift", "Cocoapod"],
-        lib: ["Alamofire", "SQLite.swift", "Firebase"]
-    },
-    {
         icon: "<div class='flutter-icon'></div>",
         title: "Flutter",
         scale: 5,
@@ -80,16 +73,16 @@ const skills = [
         lib: ["Provider", "BLoC", "GetX", "Scoped Model", "Firebase"]
     },
     {
-        icon: "fab fa-react",
-        title: "React Native",
-        scale: 4,
-        tech: ["JavaScript", "TypeScript", "npm"],
-        lib: ["Redux", "FCM"]
+        icon: "fab fa-apple",
+        title: "iOS",
+        scale: 3,
+        tech: ["Swift", "Cocoapod"],
+        lib: ["Alamofire", "SQLite.swift", "Firebase"]
     },
     {
         icon: "fab fa-react",
         title: "ReactJS",
-        scale: 4,
+        scale: 5,
         tech: ["JavaScript", "TypeScript", "npm"],
         lib: ["Redux", "FCM", "AntD"]
     },
@@ -101,11 +94,11 @@ const skills = [
         lib: ["TensorFlow", "OpenCV", "celery", "geodjango", "channels"]
     },
     {
-        icon: "fab fa-rust",
-        title: "Rust",
-        scale: 2,
-        tech: ["Rust", "cargo"],
-        lib: ["Rocket", "Diesel"]
+        icon: "fab fa-golang",
+        title: "GoLang",
+        scale: 5,
+        tech: ["Go", "gRPC"],
+        lib: ["Gin", "Ginkgo"]
     },
     {
         icon: "fa fa-globe",
@@ -125,21 +118,21 @@ const skills = [
         icon: "fab fa-git-alt",
         title: "Version Control",
         scale: 5,
-        tech: ["Git", "Mercurial"],
-        lib: []
+        tech: ["Git"],
+        lib: ["Mercurial"]
     },
     {
         icon: "fa fa-server",
         title: "Server & Scripting",
         scale: 3,
         tech: ["NGINX", "Shell"],
-        lib: []
+        lib: ["Docker"]
     },
     {
         icon: "fa fa-code",
         title: "Other Languages & Frameworks",
         scale: 3,
-        tech: ["C", "C++", "C#.NET"],
+        tech: ["C", "C++", "Rust", "C#.NET"],
         lib: ["ASP.NET", "Lucene Elastic Search"]
     },
     {
@@ -180,6 +173,10 @@ const interests = [
         title: "Swimming"
     },
     {
+        icon: "fa fa-paint-brush",
+        title: "Sketching"
+    },
+    {
         icon: "fas fa-plane-departure",
         title: "Travelling"
     },
@@ -210,9 +207,16 @@ const personal = [
 
 const experiences = [
     {
+        position: "Lead Engineer",
+        company: "ShopUp India, Bangalore",
+        duration: "Dec 2022 - Present",
+        tech: ["GoLang", "Flutter", "ReactJS"],
+        achievements: [],
+    },
+    {
         position: "Senior Engineer",
         company: "Falabella India, Bangalore",
-        duration: "Oct 2020 - Present",
+        duration: "Oct 2020 - Nov 2022",
         tech: ["Flutter", "ReactJS"],
         achievements: [
             "Developed applications for Android and iOS using Flutter framework",
@@ -225,24 +229,17 @@ const experiences = [
         ],
     },
     {
-        position: "Team Lead and Manager",
+        position: "Team Lead and Developer",
         company: "Netzary Infodynamics",
-        duration: "Sep 2018 - Sep 2020",
-        tech: [],
+        duration: "Jul 2017 - Sep 2020",
+        tech: ["Android", "iOS", "Flutter", "Python", "Web"],
         achievements: [
             "Supervised and managed all the activities within the team",
             "Identified team goal and evaluated their progress",
             "Coached team members to develop necessary skills",
             "Delegated tasks to individual team members comprehending their abilities",
-            "Helped the team accomplish the set goals"
-        ],
-    },
-    {
-        position: "Software Developer",
-        company: "Netzary Infodynamics",
-        duration: "Jul 2017 - Aug 2018",
-        tech: ["Android", "iOS", "Flutter", "Python", "Web"],
-        achievements: [
+            "Helped the team accomplish the set goals",
+
             "Developed applications for Android and iOS using native as well as hybrid tool (Flutter)",
             "Developed applications for Web with Python on top of Django framework",
             "Designed elegant and user-friendly interfaces for mobiles and web",
@@ -275,7 +272,7 @@ const education = [
         concentration: "10+2 (Science - PCM)",
         percentage: 53,
         duration: "Apr 2011 - Mar 2013",
-        achievements: []
+        achievements: [],
     },
     {
         board: "Private And Boarding School Organization of Nepal (PABSON)",
@@ -283,23 +280,75 @@ const education = [
         concentration: "School Leaving Certificate (SLC)",
         percentage: 68,
         duration: "Apr 1999 - Mar 2011",
-        achievements: []
+        achievements: [],
+        printBreak: true,
     },
 ];
 
 const personalProjects = [
     {
-        name: "rHotspot",
-        description: "rHotspot is a windows application that allows to enable Wi-Fi hotspot on windows platform.",
-        duration: "Sep 2015",
-        tech: ["C#.NET", "Batch"],
+        name: "time_dropper",
+        description: "Gorgeous, fully animated, round dial time picker for flutter",
+        duration: "May 2022",
+        tech: ["Flutter", "Dart"],
         refs: [
             {
-                icon: "fa fa-download",
-                tooltip: "Download",
-                url: "https://rajyadav-np.blogspot.com/2016/03/rhotspot-hotspot-application-for.html"
+                icon: "fa fa-link",
+                tooltip: "Check it out",
+                url: "https://pub.dev/packages/time_dropper/"
             }
         ]
+    },
+    {
+        name: "r_nav_n_sheet",
+        description: "Animated, modern and highly customisable bottom navigation bar for flutter",
+        duration: "Apr 2022",
+        tech: ["Flutter", "Dart"],
+        refs: [
+            {
+                icon: "fa fa-link",
+                tooltip: "Check it out",
+                url: "https://pub.dev/packages/r_nav_n_sheet/"
+            }
+        ]
+    },
+    {
+        name: "safe_device_check",
+        description: "Check whether the device rooted/Jail broken, is an Emulator, has Developer mode on (Android only), is app installed on external storage (Android only)",
+        duration: "Aug 2021",
+        tech: ["Flutter", "Dart", "Kotlin", "Swift"],
+        refs: [
+            {
+                icon: "fa fa-link",
+                tooltip: "Check it out",
+                url: "https://pub.dev/packages/safe_device_check/"
+            }
+        ]
+    },
+    {
+        name: "PopupMenu (not maintained)",
+        description: "Customizable android popup menu with support support for icons",
+        duration: "Sep 2018",
+        tech: ["Android", "Kotlin"],
+        refs: [
+            {
+                icon: "fa fa-link",
+                tooltip: "Check it out",
+                url: "https://github.com/rajyadavnp/PopupMenu"
+            }
+        ]
+    },
+
+
+];
+
+const companyProjects = [
+    {
+        name: "Nexus Ventures",
+        description: "Nexus ventures application for internal financial data records and reporting.",
+        duration: "Sep 2018 - Dec 2018",
+        tech: ["Python", "Django", "Celery", "XlsxWriter", "HTML", "CSS", "JavaScript"],
+        refs: []
     },
     {
         name: "Urdu Audio",
@@ -318,54 +367,6 @@ const personalProjects = [
                 url: "https://apps.apple.com/us/app/urdu-audio/id885622514",
             },
         ]
-    },
-    {
-        name: "Petzapp",
-        description: "Petzapp is an online platform to grab facilities for pet animals like consultation, health services, food, accessories, etc.",
-        duration: "Aug 2019 - Sep 2020",
-        tech: ["Flutter", "Provider", "Django", "FCM", "Razorpay", "PostGIS", "PWA", "UIKit"],
-        refs: [
-            {
-                icon: "fab fa-google-play",
-                tooltip: "View in play store",
-                url: "https://play.google.com/store/apps/details?id=com.petzappin&hl=en_IN&gl=US",
-            },
-            {
-                icon: "fab fa-app-store",
-                tooltip: "View in app store",
-                url: "https://apps.apple.com/ni/app/petzapp-find-pets-animals/id1530977281",
-            },
-            {
-                icon: "fa fa-globe",
-                tooltip: "View website",
-                url: "http://petzapp.in/",
-            },
-        ],
-    },
-];
-
-const companyProjects = [
-    {
-        name: "VDOT",
-        description: "VDOT is a hyper-local delivery application featuring package delivery, anything anywhere, realtime tracking, etc.",
-        duration: "Feb 2020 - May 2020",
-        tech: ["Flutter", "Google Maps API", "FCM", "Django", "HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-        refs: [
-            {
-                icon: "fab fa-google-play",
-                tooltip: "View in play store",
-                url: "https://play.google.com/store/apps/details?id=com.netzary.vdot",
-            },
-        ],
-        team: ["Raj Yadav"]
-    },
-    {
-        name: "Volkswagen Wellness",
-        description: "COVID-19 tracking application for Volkswagen India (Kerala).",
-        duration: "Mar 2020 - Apr 2020",
-        tech: ["Flutter", "Django", "FCM"],
-        refs: [],
-        team: ["Raj Yadav", "Ramdas S"]
     },
 ];
 

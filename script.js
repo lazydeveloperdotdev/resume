@@ -218,7 +218,7 @@ const buildPersonal = (personal) => {
 const buildProjects = (projects, isNonPersonal = false) => {
     let selector = isNonPersonal ? ".company-projects" : ".personal-projects";
     let element = document.querySelector(selector);
-    let html = isNonPersonal ? "<h2>Company Projects</h2>" : "<h2>Personal Projects</h2>";
+    let html = isNonPersonal ? "<h2>Individual Projects</h2>" : "<h2>Open-Source Projects</h2>";
     for (let i = 0; i < projects.length; i++) {
         let {name, duration, description, tech, refs, team} = projects[i];
         let links = "";

@@ -16,15 +16,15 @@
 :root {
     --bg: #cdcdcd;
     --card: #ffffff;
-    --text: #39395b;
+    --text: #252545;
     --altText: #ffffff;
     --link: green;
-    --header: #39395b;
+    --header: #4775ba;
     --headerText: #ffffff;
-    --headerAlt: #545487;
+    --headerAlt: #385d95;
     --headerAltText: #ffffff;
-    --headerAltLink: #b08fff;
-    --accent: #8D61F7;
+    --headerAltLink: #4fc996;
+    --accent: #4fc996;
     --grey: #888888;
 }
 
@@ -173,7 +173,7 @@ img.avatar {
 .screen40 {
     width: 40%;
     float: left;
-    background: var(--headerAlt);
+    background: var(--header);
 }
 
 .screen50 {
@@ -277,7 +277,7 @@ table .emphasis {
 }
 
 .header {
-    background: var(--header);
+    background: var(--headerAlt);
 }
 
 table .strong {
