@@ -4,7 +4,7 @@ const userDetails = {
     description: "A multi-skilled and dedicated IT professional with over %expYears% years of experience, adept in software development, well-versed in different programming languages. Well-rounded experience in OOPs, mobile development and user-centered design. A prodigy in learning new technologies. Strong background in team management and delegation.",
     picture: {
         src: "raj.jpeg",
-        link: "https://www.linkedin.com/in/rajyadavnp"
+        link: "https://www.linkedin.com/in/lazydeveloperdotdev"
     },
     startDate: "01 Jul 2017",
     links: [
@@ -37,7 +37,7 @@ const userDetails = {
         {
             icon: "fab fa-github",
             tooltip: "Github",
-            link: "https://github.com/rajyadavnp",
+            link: "https://github.com/lazydeveloperdotdev",
         },
         {
             icon: "fab fa-stack-overflow",
@@ -47,7 +47,7 @@ const userDetails = {
         {
             icon: "fab fa-linkedin",
             tooltip: "LinkedIn",
-            link: "https://www.linkedin.com/in/rajyadavnp/",
+            link: "https://www.linkedin.com/in/lazydeveloperdotdev/",
         },
         {
             icon: "fab fa-quora",
