@@ -612,11 +612,11 @@ a:link, a {
 
     .break {
         page-break-before: always;
-        padding-top: 25px;
+        /*padding-top: 25px;*/
     }
 
     .break.extra-margin {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .last {

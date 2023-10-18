@@ -139,7 +139,7 @@ const buildSkills = (skills) => {
 }
 const buildLanguages = (languages) => {
     let element = document.querySelector(".languages");
-    let html = "<div class='break extra-margin'></div>" + "<h2>Languages</h2>";
+    let html = "<div class='break'></div><div></div>" + "<h2>Languages</h2>";
     for (let i = 0; i < languages.length; i++) {
         let {icon, name, scale, proficiency} = languages[i];
         html += "<table>" +
@@ -185,7 +185,7 @@ const buildEducation = (education) => {
     for (let i = 0; i < education.length; i++) {
         let {printBreak, board, school, concentration, percentage, duration, achievements} = education[i];
         if (printBreak === true) {
-            html += "<div class='break extra-margin'></div>" +
+            html += "<div class='break extra-margin container-inner'></div>" +
                 "<h2>Education</h2>";
         }
         html += "<table>" +
