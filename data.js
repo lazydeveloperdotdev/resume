@@ -3,7 +3,7 @@ const userDetails = {
     designation: "Full Stack Software Developer",
     description: "A multi-skilled and dedicated IT professional with over 5 years of experience, adept in software development, well-versed in different programming languages. Well-rounded experience in OOPs, mobile development and user-centered design. A prodigy in learning new technologies. Strong background in team management and delegation.",
     picture: {
-        src: "raj.jpg",
+        src: "raj.jpeg",
         link: "https://www.linkedin.com/in/rajyadavnp"
     },
     links: [
@@ -63,7 +63,7 @@ const skills = [
         title: "Android",
         scale: 5,
         tech: ["Java", "Kotlin", "XML", "Gradle"],
-        lib: ["RxJava", "Room", "Dagger", "LiveData", "Retrofit", "Firebase"]
+        lib: ["RxJava", "Room", "LiveData", "Retrofit", "Firebase"]
     },
     {
         icon: "<div class='flutter-icon'></div>",
@@ -84,7 +84,7 @@ const skills = [
         title: "ReactJS",
         scale: 5,
         tech: ["JavaScript", "TypeScript", "npm"],
-        lib: ["Redux", "FCM", "AntD"]
+        lib: ["Redux", "FCM"]
     },
     {
         icon: "fab fa-python",
@@ -98,14 +98,14 @@ const skills = [
         title: "GoLang",
         scale: 5,
         tech: ["Go", "gRPC"],
-        lib: ["Gin", "Ginkgo"]
+        lib: ["Gorm", "Ginkgo"]
     },
     {
         icon: "fa fa-globe",
         title: "Web",
         scale: 5,
-        tech: ["HTML", "CSS", "JavaScript"],
-        lib: ["jQuery", "Bootstrap", "UIKit"]
+        tech: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript"],
+        lib: ["jQuery", "Bootstrap"]
     },
     {
         icon: "fa fa-database",
@@ -116,10 +116,10 @@ const skills = [
     },
     {
         icon: "fab fa-git-alt",
-        title: "Version Control",
+        title: "VCS & Issue Tracking",
         scale: 5,
         tech: ["Git"],
-        lib: ["Mercurial"]
+        lib: ["Jira"]
     },
     {
         icon: "fa fa-server",
@@ -133,14 +133,14 @@ const skills = [
         title: "Other Languages & Frameworks",
         scale: 3,
         tech: ["C", "C++", "Rust", "C#.NET"],
-        lib: ["ASP.NET", "Lucene Elastic Search"]
+        lib: ["ASP.NET"]
     },
     {
         printBreak: true,
         icon: "fab fa-app-store-ios",
         title: "Applications",
         scale: 4,
-        tech: ["Adobe Illustrator", "Adobe AfterEffects", "CorelDRAW", "Microsoft Office"],
+        tech: ["Adobe Illustrator", "CorelDRAW", "Microsoft Office"],
         lib: []
     }
 ];
@@ -207,11 +207,16 @@ const personal = [
 
 const experiences = [
     {
-        position: "Lead Engineer",
+        position: "Software Development Engineer - III",
         company: "ShopUp India, Bangalore",
         duration: "Dec 2022 - Present",
-        tech: ["GoLang", "Flutter", "ReactJS"],
-        achievements: [],
+        tech: ["GoLang", "Flutter", "Android Native", "NestJS"],
+        achievements: [
+            "Led cross-functional teams, fostering innovation and collaboration.",
+            "Designed scalable, robust architectures, enhancing performance and reliability.",
+            "Enforced coding standards and best practices, resulting in cleaner codes.",
+            "Collaborated closely with various teams to ensure project milestones."
+        ],
     },
     {
         position: "Senior Engineer",
@@ -221,7 +226,7 @@ const experiences = [
         achievements: [
             "Developed applications for Android and iOS using Flutter framework",
             "Designed elegant and user-friendly interfaces for mobiles and web",
-            "Produced clean, efficient code based requirement specifications",
+            "Produced clean, efficient code based on requirement specifications",
             "Integrated software components and third-party APIs",
             "Written unit and integration test cases",
             "Troubleshot, fixed and/or improved existing software",
@@ -273,6 +278,7 @@ const education = [
         percentage: 53,
         duration: "Apr 2011 - Mar 2013",
         achievements: [],
+        printBreak: true,
     },
     {
         board: "Private And Boarding School Organization of Nepal (PABSON)",
@@ -281,7 +287,6 @@ const education = [
         percentage: 68,
         duration: "Apr 1999 - Mar 2011",
         achievements: [],
-        printBreak: true,
     },
 ];
 

@@ -79,7 +79,6 @@ html, body {
     width: 60vw;
     height: 70vw;
     border: 5px solid rgba(255, 255, 255, 0.5);
-    transform: skewX(-5deg);
 }
 
 .splash.animate {
@@ -132,7 +131,6 @@ img.avatar {
     height: 95px;
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    transform: skewX(-5deg);
 }
 
 
@@ -293,9 +291,6 @@ table .strong {
     font-weight: normal;
 }
 
-img {
-    transform: skewX(-5deg);
-}
 
 table .grey {
     color: var(--grey);
@@ -370,7 +365,6 @@ ul.tags > li {
     padding: 2px 5px;
     color: var(--altText);
     border: 1px solid var(--accent);
-    transform: skewX(-15deg);
 }
 
 ul.tags > li.o {
@@ -448,7 +442,6 @@ ul.social > li a.Quora:hover {
 .fa-square-full {
     font-size: 8px;
     margin-left: 3px;
-    transform: skewX(-15deg);
 }
 
 .fa-square-full.o {
