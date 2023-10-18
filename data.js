@@ -137,7 +137,6 @@ const skills = [
         lib: ["ASP.NET"]
     },
     {
-        printBreak: true,
         icon: "fab fa-app-store-ios",
         title: "Applications",
         scale: 4,

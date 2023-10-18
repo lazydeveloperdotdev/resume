@@ -139,7 +139,7 @@ const buildSkills = (skills) => {
 }
 const buildLanguages = (languages) => {
     let element = document.querySelector(".languages");
-    let html = "<h2>Languages</h2>";
+    let html = "<div class='break extra-margin'></div>" + "<h2>Languages</h2>";
     for (let i = 0; i < languages.length; i++) {
         let {icon, name, scale, proficiency} = languages[i];
         html += "<table>" +
