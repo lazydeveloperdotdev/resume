@@ -1,11 +1,12 @@
 const userDetails = {
     name: "Raj Yadav",
     designation: "Full Stack Software Developer",
-    description: "A multi-skilled and dedicated IT professional with over 6 years of experience, adept in software development, well-versed in different programming languages. Well-rounded experience in OOPs, mobile development and user-centered design. A prodigy in learning new technologies. Strong background in team management and delegation.",
+    description: "A multi-skilled and dedicated IT professional with over %expYears% years of experience, adept in software development, well-versed in different programming languages. Well-rounded experience in OOPs, mobile development and user-centered design. A prodigy in learning new technologies. Strong background in team management and delegation.",
     picture: {
         src: "raj.jpeg",
         link: "https://www.linkedin.com/in/rajyadavnp"
     },
+    startDate: "01 Jul 2017",
     links: [
         {
             icon: "fa fa-envelope-open",

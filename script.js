@@ -40,8 +40,8 @@ const _buildList = (items) => {
     return tags;
 }
 
-const buildSplash = (userDetails) => {
-    let {picture, name, designation} = userDetails;
+const buildSplash = (details) => {
+    let {picture, name, designation} = details;
     let html = "<div>";
     if (picture !== undefined) {
         html += "<img alt='' src='" + picture.src + "'/>";
@@ -54,10 +54,19 @@ const buildSplash = (userDetails) => {
 
 }
 
-const buildTopHeader = (userDetails) => {
+const getYears = (startDate) => {
+    let now = new Date();
+    let start = new Date(startDate);
+    let MILLIS_TO_YEAR = 1000 * 60 * 60 * 24 * 365.25;
+    return Math.floor((now - start) / MILLIS_TO_YEAR);
+
+}
+const buildTopHeader = (details) => {
     let element = document.querySelectorAll(".right-header");
     let picHtml = "";
-    let {name, description, designation} = userDetails;
+    let {name, description, designation, startDate} = details;
+
+    description = description.replaceAll("%expYears%", getYears(startDate))
     let html = "<table class='username'>" +
         "<tr>" +
         "<td>" +
@@ -74,9 +83,9 @@ const buildTopHeader = (userDetails) => {
         element[i].innerHTML = html;
     }
 }
-const buildBottomHeader = (userDetails) => {
+const buildBottomHeader = (details) => {
     let element = document.querySelector(".left-header");
-    let {picture, links} = userDetails;
+    let {picture, links} = details;
     let html = "<div class='p-10 flex'>";
     html += "<div class='stretch'>";
     for (let i = 0; i < links.length; i++) {
@@ -260,9 +269,9 @@ const buildProjects = (projects, isNonPersonal = false) => {
 }
 
 
-const buildFooter = (userDetails) => {
+const buildFooter = (details) => {
     let element = document.querySelectorAll(".footer>.container-inner");
-    let {sns, qrCode} = userDetails;
+    let {sns, qrCode} = details;
     let html = "<div class='pull-left'>";
     if (sns.length > 0) {
         html += "<h3>Find me on:</h3>" +
