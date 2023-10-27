@@ -60,34 +60,6 @@ const userDetails = {
 
 const skills = [
     {
-        icon: "fab fa-android",
-        title: "Android",
-        scale: 5,
-        tech: ["Java", "Kotlin", "XML", "Gradle"],
-        lib: ["RxJava", "Room", "LiveData", "Retrofit", "Firebase"]
-    },
-    {
-        icon: "<div class='flutter-icon'></div>",
-        title: "Flutter",
-        scale: 5,
-        tech: ["Dart", "pub"],
-        lib: ["Provider", "BLoC", "GetX", "Scoped Model", "Firebase"]
-    },
-    {
-        icon: "fab fa-apple",
-        title: "iOS",
-        scale: 3,
-        tech: ["Swift", "Cocoapod"],
-        lib: ["Alamofire", "SQLite.swift", "Firebase"]
-    },
-    {
-        icon: "fab fa-react",
-        title: "ReactJS",
-        scale: 5,
-        tech: ["JavaScript", "TypeScript", "npm"],
-        lib: ["Redux", "FCM"]
-    },
-    {
         icon: "fab fa-python",
         title: "Python",
         scale: 5,
@@ -100,6 +72,34 @@ const skills = [
         scale: 5,
         tech: ["Go", "gRPC"],
         lib: ["Gorm", "Ginkgo"]
+    },
+    {
+        icon: "fab fa-react",
+        title: "ReactJS",
+        scale: 5,
+        tech: ["JavaScript", "TypeScript", "npm"],
+        lib: ["Redux", "FCM"]
+    },
+    {
+        icon: "<div class='flutter-icon'></div>",
+        title: "Flutter",
+        scale: 5,
+        tech: ["Dart", "pub"],
+        lib: ["Provider", "BLoC", "GetX", "Scoped Model", "Firebase"]
+    },
+    {
+        icon: "fab fa-android",
+        title: "Android",
+        scale: 5,
+        tech: ["Java", "Kotlin", "XML", "Gradle"],
+        lib: ["RxJava", "Room", "LiveData", "Retrofit", "Firebase"]
+    },
+    {
+        icon: "fab fa-apple",
+        title: "iOS",
+        scale: 3,
+        tech: ["Swift", "Cocoapod"],
+        lib: ["Alamofire", "SQLite.swift", "Firebase"]
     },
     {
         icon: "fa fa-globe",
