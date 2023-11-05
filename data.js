@@ -351,15 +351,20 @@ const companyProjects = [
         name: "Nexus Ventures",
         description: "Nexus ventures application for internal financial data records and reporting.",
         duration: "Sep 2018 - Dec 2018",
-        tech: ["Python", "Django", "Celery", "XlsxWriter", "HTML", "CSS", "JavaScript"],
+        tech: ["Django", "PostgreSQL", "Celery", "XlsxWriter", "HTML", "CSS", "JavaScript"],
         refs: []
     },
     {
         name: "Urdu Audio",
         description: "Urdu audio is an audio streaming mobile application available on Android and iOS platform.",
         duration: "Feb 2018 - Mar 2018",
-        tech: ["Flutter", "Scoped Model", "FCM"],
+        tech: ["Django", "PostgreSQL", "Flutter", "Scoped Model", "FCM", "HTML", "CSS", "JavaScript"],
         refs: [
+            {
+                icon: "fa fa-link",
+                tooltip: "Visit",
+                url: "https://bhatkallys.com"
+            },
             {
                 icon: "fab fa-google-play",
                 tooltip: "View in play store",
