@@ -95,13 +95,6 @@ const skills = [
         lib: ["RxJava", "Room", "LiveData", "Retrofit", "Firebase"]
     },
     {
-        icon: "fab fa-apple",
-        title: "iOS",
-        scale: 3,
-        tech: ["Swift", "Cocoapod"],
-        lib: ["Alamofire", "SQLite.swift", "Firebase"]
-    },
-    {
         icon: "fa fa-globe",
         title: "Web",
         scale: 5,
@@ -114,6 +107,13 @@ const skills = [
         scale: 4,
         tech: ["PostgreSQL", "MySQL", "SQLite", "Redis"],
         lib: ["PostGIS"]
+    },
+    {
+        icon: "fab fa-apple",
+        title: "iOS",
+        scale: 2,
+        tech: ["Swift", "Cocoapod"],
+        lib: ["Alamofire", "SQLite.swift", "Firebase"]
     },
     {
         icon: "fab fa-git-alt",
@@ -207,10 +207,10 @@ const personal = [
 
 const experiences = [
     {
-        position: "Software Development Engineer - III",
+        position: "Full Stack Engineer - SDE III",
         company: "ShopUp India, Bangalore",
         duration: "Dec 2022 - Present",
-        tech: ["GoLang", "Flutter", "Android Native", "NestJS"],
+        tech: ["GoLang", "Flutter", "Android Native"],
         achievements: [
             "Led cross-functional teams, fostering innovation and collaboration.",
             "Designed scalable, robust architectures, enhancing performance and reliability.",
@@ -219,7 +219,7 @@ const experiences = [
         ],
     },
     {
-        position: "Senior Engineer",
+        position: "Front-End Engineer - SDE II",
         company: "Falabella India, Bangalore",
         duration: "Oct 2020 - Nov 2022",
         tech: ["Flutter", "ReactJS"],
@@ -234,17 +234,16 @@ const experiences = [
         ],
     },
     {
-        position: "Team Lead and Developer",
+        position: "Team Lead and Full Stack Developer",
         company: "Netzary Infodynamics",
         duration: "Jul 2017 - Sep 2020",
-        tech: ["Android", "iOS", "Flutter", "Python", "Web"],
+        tech: ["Django", "Android", "Flutter", "ReactJS"],
         achievements: [
             "Supervised and managed all the activities within the team",
             "Identified team goal and evaluated their progress",
             "Coached team members to develop necessary skills",
             "Delegated tasks to individual team members comprehending their abilities",
             "Helped the team accomplish the set goals",
-
             "Developed applications for Android and iOS using native as well as hybrid tool (Flutter)",
             "Developed applications for Web with Python on top of Django framework",
             "Designed elegant and user-friendly interfaces for mobiles and web",
@@ -265,9 +264,9 @@ const education = [
         percentage: 86,
         duration: "Apr 2014 - Jun 2017",
         achievements: [
+            "Created an Android application backed by Django and PostgreSQL for cultural event held in the college.",
             "Designed and developed an online University data processing system using ASP MVC, MS SQL Express, web technologies as an academic project",
             "Designed and developed an SIMS Windows Form Application using C#.NET and MS SQL Express as an academic project",
-            "Created an Android application for cultural event held in the college with features like registration, information about events, etc.",
             "Participated and won inter-college competition for web application development"
         ]
     },
