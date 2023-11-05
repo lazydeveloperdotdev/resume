@@ -352,7 +352,13 @@ const companyProjects = [
         description: "Nexus ventures application for internal financial data records and reporting.",
         duration: "Sep 2018 - Dec 2018",
         tech: ["Django", "PostgreSQL", "Celery", "XlsxWriter", "HTML", "CSS", "JavaScript"],
-        refs: []
+        refs: [
+            {
+                icon: "fa fa-link",
+                tooltip: "Visit",
+                url: "https://nexusvc.com"
+            },
+        ]
     },
     {
         name: "Urdu Audio",
