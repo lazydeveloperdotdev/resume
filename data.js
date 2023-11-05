@@ -356,7 +356,7 @@ const companyProjects = [
             {
                 icon: "fa fa-link",
                 tooltip: "Visit",
-                url: "https://nexusvc.com"
+                url: "https://nexusvp.com"
             },
         ]
     },
