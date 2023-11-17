@@ -212,6 +212,8 @@ const experiences = [
         duration: "Dec 2022 - Present",
         tech: ["GoLang", "React.JS", "Flutter", "Android (Native)"],
         achievements: [
+            "Developed applications for Android and iOS using Flutter framework",
+            "Designed and developed elegant and user-friendly web applications using React.JS",
             "Led cross-functional teams, fostering innovation and collaboration.",
             "Designed scalable, robust architectures, enhancing performance and reliability.",
             "Enforced coding standards and best practices, resulting in cleaner codes.",
