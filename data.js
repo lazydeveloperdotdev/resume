@@ -74,6 +74,13 @@ const skills = [
         lib: ["Gorm", "Ginkgo"]
     },
     {
+        icon: "fab fa-java",
+        title: "Java",
+        scale: 5,
+        tech: ["Java", "Kotlin", "Gradle", "Maven"],
+        lib: ["Spring Boot"]
+    },
+    {
         icon: "fab fa-react",
         title: "React.JS",
         scale: 5,
@@ -239,7 +246,7 @@ const experiences = [
         position: "Team Lead and Full Stack Developer",
         company: "Netzary Infodynamics",
         duration: "Jul 2017 - Sep 2020",
-        tech: ["Django", "Android (Native)", "Flutter", "React.JS"],
+        tech: ["Django", "Spring Boot", "Android (Native)", "Flutter", "React.JS"],
         achievements: [
             "Supervised and managed all the activities within the team",
             "Identified team goal and evaluated their progress",
