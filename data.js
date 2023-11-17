@@ -75,7 +75,7 @@ const skills = [
     },
     {
         icon: "fab fa-react",
-        title: "ReactJS",
+        title: "React.JS",
         scale: 5,
         tech: ["JavaScript", "TypeScript", "npm"],
         lib: ["Redux", "FCM"]
@@ -99,12 +99,12 @@ const skills = [
         title: "Web",
         scale: 5,
         tech: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript"],
-        lib: ["jQuery", "Bootstrap"]
+        lib: ["jQuery", "Bootstrap", "UIKit"]
     },
     {
         icon: "fa fa-database",
         title: "Databases",
-        scale: 4,
+        scale: 5,
         tech: ["PostgreSQL", "MySQL", "SQLite", "Redis"],
         lib: ["PostGIS"]
     },
@@ -124,23 +124,23 @@ const skills = [
     },
     {
         icon: "fa fa-server",
-        title: "Server & Scripting",
+        title: "Server & More",
         scale: 3,
         tech: ["NGINX", "Shell"],
-        lib: ["Docker"]
+        lib: ["Docker", "Kafka"]
     },
     {
         icon: "fa fa-code",
         title: "Other Languages & Frameworks",
         scale: 3,
-        tech: ["C", "C++", "Rust", "C#.NET"],
+        tech: ["Rust", "C#.NET"],
         lib: ["ASP.NET"]
     },
     {
         icon: "fab fa-app-store-ios",
         title: "Applications",
-        scale: 4,
-        tech: ["Adobe Illustrator", "CorelDRAW", "Microsoft Office"],
+        scale: 5,
+        tech: ["Adobe Illustrator", "Microsoft Office"],
         lib: []
     }
 ];
@@ -208,9 +208,9 @@ const personal = [
 const experiences = [
     {
         position: "Full Stack Engineer - SDE III",
-        company: "ShopUp India, Bangalore",
+        company: "ShopUp, Bangalore",
         duration: "Dec 2022 - Present",
-        tech: ["GoLang", "Flutter", "Android Native"],
+        tech: ["GoLang", "React.JS", "Flutter", "Android (Native)"],
         achievements: [
             "Led cross-functional teams, fostering innovation and collaboration.",
             "Designed scalable, robust architectures, enhancing performance and reliability.",
@@ -219,13 +219,13 @@ const experiences = [
         ],
     },
     {
-        position: "Front-End Engineer - SDE II",
-        company: "Falabella India, Bangalore",
+        position: "Full Stack Engineer - SDE II",
+        company: "Falabella, Bangalore",
         duration: "Oct 2020 - Nov 2022",
-        tech: ["Flutter", "ReactJS"],
+        tech: ["GoLang", "Flutter", "React.JS"],
         achievements: [
             "Developed applications for Android and iOS using Flutter framework",
-            "Designed elegant and user-friendly interfaces for mobiles and web",
+            "Designed elegant and user-friendly interfaces for mobiles and web using React.JS",
             "Produced clean, efficient code based on requirement specifications",
             "Integrated software components and third-party APIs",
             "Written unit and integration test cases",
@@ -237,7 +237,7 @@ const experiences = [
         position: "Team Lead and Full Stack Developer",
         company: "Netzary Infodynamics",
         duration: "Jul 2017 - Sep 2020",
-        tech: ["Django", "Android", "Flutter", "ReactJS"],
+        tech: ["Django", "Android (Native)", "Flutter", "React.JS"],
         achievements: [
             "Supervised and managed all the activities within the team",
             "Identified team goal and evaluated their progress",
@@ -351,7 +351,7 @@ const companyProjects = [
         name: "Nexus Ventures",
         description: "Nexus ventures application for internal financial data records and reporting.",
         duration: "Sep 2018 - Dec 2018",
-        tech: ["Django", "PostgreSQL", "Celery", "XlsxWriter", "HTML", "CSS", "JavaScript"],
+        tech: ["Django", "PostgreSQL", "Celery", "XlsxWriter", "React.JS"],
         refs: [
             {
                 icon: "fa fa-link",
@@ -364,7 +364,7 @@ const companyProjects = [
         name: "Urdu Audio",
         description: "Urdu audio is an audio streaming mobile application available on Android and iOS platform.",
         duration: "Feb 2018 - Mar 2018",
-        tech: ["Django", "PostgreSQL", "Flutter", "Scoped Model", "FCM", "HTML", "CSS", "JavaScript"],
+        tech: ["Django", "PostgreSQL", "Flutter", "Scoped Model", "FCM", "React.JS"],
         refs: [
             {
                 icon: "fa fa-link",
