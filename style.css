@@ -223,7 +223,7 @@ img.avatar {
 
 .block-section h2 {
     text-transform: uppercase;
-    background: linear-gradient(to right, var(--header), var(--accent), var(--accent55), var(--accent11), transparent);
+    background: linear-gradient(to right, var(--header) 20%, var(--accent), var(--accent55), var(--accent11), transparent);
     color: var(--altText);
     margin: 5px 0;
     font-size: 16px;
