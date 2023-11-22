@@ -1,3 +1,27 @@
+const _buildYears = (since, to = null) => {
+    if (since) {
+        let date = new Date(since);
+        let now = new Date();
+        if (to) {
+            now = new Date(to);
+        }
+        let yearDiff = now.getFullYear() - date.getFullYear();
+        let monthDiff = now.getMonth() - date.getMonth();
+
+        if (monthDiff < 0) {
+            yearDiff--;
+            monthDiff += 12;
+        }
+        if (yearDiff <= 0) {
+            return "<span class='muted thin'> (" + monthDiff + "m" + ")</span>";
+        }
+        if (monthDiff <= 0) {
+            return "<span class='muted thin'> (" + yearDiff + "y" + ")</span>";
+        }
+        return "<span class='muted thin'> (" + yearDiff + "y " + monthDiff + "m" + ")</span>";
+    }
+    return "";
+}
 const _buildScale = (scale) => {
     let scaleHtml = "";
     for (let s = 0; s < 5; s++) {
@@ -90,16 +114,11 @@ const buildBottomHeader = (details) => {
     html += "<div class='stretch'>";
     for (let i = 0; i < links.length; i++) {
         let {icon, link, label, tooltip} = links[i];
-        html += "<table cellpadding='0' cellspacing='0'>" +
-            "<tr>" +
-            "<td>" +
-            "<i style='font-size: 12px' class='" + icon + "'></i>" +
-            "</td>" +
-            "<td  style='padding: 3px 0'>" +
-            "<a style='padding: 3px 0' title='" + tooltip + "' href='" + link + "'>" + label + "</a> " +
-            "</td>" +
-            "</tr>" +
-            "</table>";
+        html +=
+            "<a class='link-w-icon' title='" + tooltip + "' href='" + link + "'>" +
+            "<i class='" + icon + "'></i>" +
+            "<span>" + label + "</span>" +
+            "</a> ";
     }
     html += "</div>" +
         "<img class='avatar pull-right' alt='' src='" + picture.src + "'/>" +
@@ -110,7 +129,7 @@ const buildSkills = (skills) => {
     let element = document.querySelector(".skill-set");
     let html = "<h2>Skills</h2>";
     for (let i = 0; i < skills.length; i++) {
-        let {printBreak, icon, title, scale, tech, lib} = skills[i];
+        let {printBreak, icon, title, since, to, scale, tech, lib} = skills[i];
         if (printBreak === true) {
             html += "<div class='break extra-margin'></div>" +
                 "<h2>Skills</h2>";
@@ -127,8 +146,8 @@ const buildSkills = (skills) => {
         html += "<table>" +
             "<tr>" +
             "<td class='icon'>" + iconHtml + "</td>" +
-            "<td class='title'>" + skills[i].title + "</td>" +
-            "<td class='progress'>" + _buildScale(skills[i].scale) + "</td></tr>" +
+            "<td class='title'>" + title + _buildYears(since, to) + "</td>" +
+            "<td class='progress'>" + _buildScale(scale) + "</td></tr>" +
             "<tr>" +
             "<td></td>" +
             "<td colspan='2' class='skills'>" +
@@ -287,14 +306,41 @@ const buildFooter = (details) => {
         }
         html += "</ul>";
     }
-    html += "</div>";
+    html += "<div class='clear'></div>" +
+        "<h6 class='mt-10 updated-date'>Last updated: " +
+        new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: '2-digit'}) +
+        "</h6>" +
+        "</div>";
     html += "<div class='pull-right'>";
     if (qrCode !== undefined) {
-        html += "<img src='" + qrCode + "' alt='' style='height: 80px' />"
+        html += "<img class='qr' src='" + qrCode + "' alt='' style='height: 80px' />"
     }
+
     html += "</div><div class='clear'></div>";
     for (let i = 0; i < element.length; i++) {
         element[i].innerHTML = html;
     }
 
+}
+
+let isDark = true;
+
+const themeChangeListener = () => {
+    const matchPrefersDark = window.matchMedia('(prefers-color-scheme:dark)');
+    if (matchPrefersDark.matches) {
+        isDark = true;
+        toggleTheme();
+    }
+    matchPrefersDark.addEventListener('change', event => {
+        isDark = event.matches;
+        toggleTheme();
+    });
+}
+
+document.addEventListener("DOMContentLoaded", themeChangeListener);
+
+
+const toggleTheme = () => {
+    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "");
+    isDark = !isDark;
 }

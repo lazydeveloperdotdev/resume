@@ -35,6 +35,11 @@ const userDetails = {
     ],
     sns: [
         {
+            icon: "fa fa-link",
+            tooltip: "Lazy Developer",
+            link: "https://lazydeveloper.dev",
+        },
+        {
             icon: "fab fa-github",
             tooltip: "Github",
             link: "https://github.com/lazydeveloperdotdev",
@@ -55,7 +60,7 @@ const userDetails = {
             link: "https://www.quora.com/profile/Raj-Yadav-133",
         },
     ],
-    qrCode: "qr-code.png"
+    qrCode: "qr-code.png",
 }
 
 const skills = [
@@ -63,6 +68,7 @@ const skills = [
         icon: "fab fa-python",
         title: "Python",
         scale: 5,
+        since: "07-01-2017",
         tech: ["Python", "Django", "pip"],
         lib: ["TensorFlow", "OpenCV", "celery", "geodjango", "channels"]
     },
@@ -70,20 +76,15 @@ const skills = [
         icon: "fab fa-golang",
         title: "GoLang",
         scale: 5,
+        since: "10-01-2020",
         tech: ["Go", "gRPC"],
         lib: ["Gorm", "Ginkgo"]
-    },
-    {
-        icon: "fab fa-java",
-        title: "Java",
-        scale: 5,
-        tech: ["Java", "Kotlin", "Gradle", "Maven"],
-        lib: ["Spring Boot"]
     },
     {
         icon: "fab fa-react",
         title: "React.JS",
         scale: 5,
+        since: "11-01-2017",
         tech: ["JavaScript", "TypeScript", "npm"],
         lib: ["Redux", "FCM"]
     },
@@ -91,6 +92,7 @@ const skills = [
         icon: "<div class='flutter-icon'></div>",
         title: "Flutter",
         scale: 5,
+        since: "01-01-2018",
         tech: ["Dart", "pub"],
         lib: ["Provider", "BLoC", "GetX", "Scoped Model", "Firebase"]
     },
@@ -98,6 +100,7 @@ const skills = [
         icon: "fab fa-android",
         title: "Android",
         scale: 5,
+        since: "07-01-2017",
         tech: ["Java", "Kotlin", "XML", "Gradle"],
         lib: ["RxJava", "Room", "LiveData", "Retrofit", "Firebase"]
     },
@@ -105,6 +108,7 @@ const skills = [
         icon: "fa fa-globe",
         title: "Web",
         scale: 5,
+        since: "07-01-2017",
         tech: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript"],
         lib: ["jQuery", "Bootstrap", "UIKit"]
     },
@@ -112,6 +116,7 @@ const skills = [
         icon: "fa fa-database",
         title: "Databases",
         scale: 5,
+        since: "07-01-2017",
         tech: ["PostgreSQL", "MySQL", "SQLite", "Redis"],
         lib: ["PostGIS"]
     },
@@ -119,6 +124,8 @@ const skills = [
         icon: "fab fa-apple",
         title: "iOS",
         scale: 2,
+        since: "01-02-2018",
+        to: "10-01-2020",
         tech: ["Swift", "Cocoapod"],
         lib: ["Alamofire", "SQLite.swift", "Firebase"]
     },
@@ -138,10 +145,10 @@ const skills = [
     },
     {
         icon: "fa fa-code",
-        title: "Other Languages & Frameworks",
+        title: "Other Languages",
         scale: 3,
-        tech: ["Rust", "C#.NET"],
-        lib: ["ASP.NET"]
+        tech: ["Rust"],
+        lib: []
     },
     {
         icon: "fab fa-app-store-ios",
@@ -246,7 +253,7 @@ const experiences = [
         position: "Team Lead and Full Stack Developer",
         company: "Netzary Infodynamics",
         duration: "Jul 2017 - Sep 2020",
-        tech: ["Django", "Spring Boot", "Android (Native)", "Flutter", "React.JS"],
+        tech: ["Django", "Android (Native)", "Flutter", "React.JS"],
         achievements: [
             "Supervised and managed all the activities within the team",
             "Identified team goal and evaluated their progress",

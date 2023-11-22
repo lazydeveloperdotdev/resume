@@ -1,31 +1,43 @@
-/*:root {*/
-/*    --bg: #cdcdcd;*/
-/*    --card: #ffffff;*/
-/*    --text: #1d5442;*/
-/*    --altText: #ffffff;*/
-/*    --link: green;*/
-/*    --header: #1d5442;*/
-/*    --headerText: #ffffff;*/
-/*    --headerAlt: #28785d;*/
-/*    --headerAltText: #ffffff;*/
-/*    --headerAltLink: #99ff99;*/
-/*    --accent: #169e71;*/
-/*    --grey: #888888;*/
-/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&display=swap');
 
 :root {
     --bg: #cdcdcd;
     --card: #ffffff;
+    --card55: #ffffff55;
+    --card11: #ffffff11;
     --text: #252545;
+    --text55: #25254555;
+    --text11: #25254511;
     --altText: #ffffff;
-    --link: green;
     --header: #4775ba;
     --headerText: #ffffff;
     --headerAlt: #385d95;
     --headerAltText: #ffffff;
-    --headerAltLink: #4fc996;
     --accent: #4fc996;
+    --accent55: #4fc99655;
+    --accent11: #4fc99611;
     --grey: #888888;
+    --isLight: 1;
+}
+
+[data-theme=dark] {
+    --bg: #20202f;
+    --card: #0e0e15;
+    --card55: #0e0e1555;
+    --card11: #0e0e1511;
+    --text: #ffffff;
+    --text55: #ffffff55;
+    --text11: #ffffff11;
+    --altText: #ffffff;
+    --header: #7e9ecf;
+    --headerText: #ffffff;
+    --headerAlt: #648ac5;
+    --headerAltText: #ffffff;
+    --accent: #84d9b5;
+    --accent55: #4fc99655;
+    --accent11: #4fc99611;
+    --grey: #888888;
+    --isLight: 0;
 }
 
 @font-face {
@@ -40,7 +52,8 @@
 }
 
 * {
-    font-family: Proxima, Montserrat, Georgia, serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /*font-family: Proxima, Montserrat, Georgia, serif;*/
 }
 
 html, body {
@@ -139,41 +152,41 @@ img.avatar {
 }
 
 .left-header svg path {
-    fill: var(--headerAltText);
+    fill: var(--card);
 }
 
 .left-header i.fa {
-    color: var(--headerAltText);
+    color: var(--card);
     margin-right: 5px;
 }
 
 .left-header a,
 .left-header a:link {
-    color: var(--headerAltText);
+    color: var(--card);
     text-decoration: none;
 }
 
 .left-header a:hover {
-    color: var(--headerAltLink);
+    color: var(--accent);
 }
 
 .footer {
-    border-top: 1px solid rgba(54, 54, 87, 0.2);
+    border-top: 1px solid var(--text55);
     max-width: 1020px;
     width: 100%;
-    margin: 0 auto;
+    margin: 150px auto 0;
     padding: 15px 0;
     bottom: 0;
 }
 
 .screen40 .footer {
-    border-color: #ffffff88;
+    border-color: var(--card55);
 }
 
 .screen40 {
     width: 40%;
     float: left;
-    background: var(--header);
+    background: linear-gradient(to bottom right, var(--header) 30%, var(--accent) 130%);
 }
 
 .screen50 {
@@ -210,11 +223,11 @@ img.avatar {
 
 .block-section h2 {
     text-transform: uppercase;
-    color: var(--text);
+    background: linear-gradient(to right, var(--header), var(--accent), var(--accent55), var(--accent11), transparent);
+    color: var(--altText);
     margin: 5px 0;
     font-size: 16px;
-    padding-left: 5px;
-    border-left: 5px solid var(--accent);
+    padding: 5px;
 }
 
 
@@ -247,48 +260,50 @@ table .emphasis {
 }
 
 .screen40 .block-section h2 {
-    color: white;
+    background: linear-gradient(to right, var(--card), var(--card55), var(--card11), transparent);
+    color: var(--header);
 }
 
 .screen40 table .emphasis {
-    color: #ffffff88;
+    color: var(--card);
+    opacity: 0.6;
 }
 
 .screen40 table .title,
 .screen40 table .icon,
 .screen40 table .text-icon {
-    color: white;
+    color: var(--card);
 }
 
 .screen40 ul.tags > li {
-    background: white;
-    border-color: white;
+    background: var(--card);
+    border-color: var(--card);
     color: var(--headerAlt);
 
 }
 
 .screen40 ul.tags > li.o,
 .screen40 ul.tags.bordered > li {
-    color: white;
-    border-color: white;
+    color: var(--card);
+    border-color: var(--card);
 }
 
 .screen40 .fa-square-full {
-    color: white;
+    color: var(--card);
 }
 
 .header {
-    background: var(--headerAlt);
+    background: linear-gradient(to bottom right, var(--header), var(--headerAlt), var(--header));
 }
 
 table .strong {
-    color: var(--link);
+    color: var(--header);
     font-weight: bold;
     font-size: 12px;
 }
 
 .light {
-    font-weight: normal;
+    color: var(--card);
 }
 
 
@@ -327,6 +342,19 @@ table .grey {
     margin-top: 10px;
 }
 
+.mt-25 {
+    margin-top: 25px;
+}
+
+.muted {
+    opacity: 0.6;
+}
+
+.thin {
+    font-weight: normal;
+    font-size: small;
+}
+
 .white70 {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -363,7 +391,7 @@ ul.tags > li {
     background: var(--accent);
     margin: 2px;
     padding: 2px 5px;
-    color: var(--altText);
+    color: var(--card);
     border: 1px solid var(--accent);
 }
 
@@ -415,12 +443,16 @@ ul.social > li a:link {
 
 .screen40 ul.social > li a,
 .screen40 ul.social > li a:link {
-    color: white;
+    color: var(--card);
 }
 
 
 ul.social > li a:hover {
-    color: var(--link);
+    color: var(--header);
+}
+
+ul.social > li a.Lazy-Developer:hover {
+    color: var(--accent);
 }
 
 ul.social > li a.Github:hover {
@@ -453,11 +485,11 @@ ul.social > li a.Quora:hover {
 }
 
 .screen40 .footer h3 {
-    color: white;
+    color: var(--card);
 }
 
 a:link, a {
-    color: var(--link);
+    color: var(--header);
 }
 
 .on-mobile {
@@ -525,8 +557,7 @@ a:link, a {
     display: inline-block;
     background: url("https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png") 0 0 no-repeat;
     background-size: auto 13px;
-    filter: brightness(0) invert(1);
-    /*-webkit-filter: invert(25%) sepia(1) saturate(100000%) hue-rotate(258deg);*/
+    filter: brightness(0) invert(var(--isLight));
 }
 
 .icon-button {
@@ -562,16 +593,17 @@ a:link, a {
 }
 
 .username p {
-    color: grey;
+    color: var(--text);
+    opacity: 0.6;
 }
 
 .screen40 .username h2,
 .screen40 .username h4 {
-    color: white;
+    color: var(--card);
 }
 
 .screen40 .username p {
-    color: #ffffffaa;
+    color: var(--card);
 }
 
 .float-button,
@@ -586,6 +618,67 @@ a:link, a {
     box-shadow: 2px 2px 3px #00000022;
 }
 
+
+hr {
+    height: 1px;
+    border: none;
+    background: var(--text55);
+    opacity: 0.6;
+}
+
+.m-25 {
+    margin: 15px;
+}
+
+hr.light {
+    height: 1px;
+    border: none;
+    background: var(--card55);
+    margin: 15px 10px 10px 10px;
+}
+
+.fab-icons {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.fab-icons > button {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border: none;
+    border-radius: 50%;
+    font-size: large;
+    color: var(--card);
+    cursor: pointer;
+}
+
+.link-w-icon {
+    display: flex;
+    padding: 5px 0;
+    gap: 5px;
+    align-items: center;
+}
+
+.qr {
+    background: var(--card);
+}
+
+.updated-date {
+    font-size: x-small;
+    font-weight: normal;
+    color: var(--card);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.screen60 .updated-date {
+    color: var(--text);
+}
+
 @media print {
     html, body {
         background: var(--card);
@@ -594,6 +687,10 @@ a:link, a {
     }
 
     .float-button {
+        display: none;
+    }
+
+    .fab-icons {
         display: none;
     }
 
