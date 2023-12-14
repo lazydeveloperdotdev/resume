@@ -7,6 +7,7 @@ const userDetails = {
         link: "https://www.linkedin.com/in/lazydeveloperdotdev"
     },
     startDate: "01 Jul 2017",
+    updateDate: "14 Dec 2023",
     links: [
         {
             icon: "fa fa-envelope-open",
@@ -70,7 +71,7 @@ const skills = [
         scale: 5,
         since: "07-01-2017",
         tech: ["Python", "Django", "pip"],
-        lib: ["TensorFlow", "OpenCV", "celery", "geodjango", "channels"]
+        lib: ["TensorFlow", "OpenCV", "celery", "geodjango", "channels", "confluent-kafka"]
     },
     {
         icon: "fab fa-golang",
@@ -79,6 +80,21 @@ const skills = [
         since: "10-01-2020",
         tech: ["Go", "gRPC"],
         lib: ["Gorm", "Ginkgo"]
+    },
+    {
+        icon: "fa fa-database",
+        title: "Databases",
+        scale: 5,
+        since: "07-01-2017",
+        tech: ["PostgreSQL", "MySQL", "NoSQL", "Redis"],
+        lib: ["PostGIS"]
+    },
+    {
+        icon: "fa fa-server",
+        title: "Server & More",
+        scale: 4,
+        tech: ["Shell"],
+        lib: ["NGINX", "Kafka", "Docker"]
     },
     {
         icon: "fab fa-react",
@@ -113,17 +129,9 @@ const skills = [
         lib: ["jQuery", "Bootstrap", "UIKit"]
     },
     {
-        icon: "fa fa-database",
-        title: "Databases",
-        scale: 5,
-        since: "07-01-2017",
-        tech: ["PostgreSQL", "MySQL", "SQLite", "Redis"],
-        lib: ["PostGIS"]
-    },
-    {
         icon: "fab fa-apple",
         title: "iOS",
-        scale: 2,
+        scale: 1,
         since: "01-02-2018",
         to: "10-01-2020",
         tech: ["Swift", "Cocoapod"],
@@ -135,20 +143,6 @@ const skills = [
         scale: 5,
         tech: ["Git"],
         lib: ["Jira"]
-    },
-    {
-        icon: "fa fa-server",
-        title: "Server & More",
-        scale: 3,
-        tech: ["NGINX", "Shell"],
-        lib: ["Docker", "Kafka"]
-    },
-    {
-        icon: "fa fa-code",
-        title: "Other Languages",
-        scale: 3,
-        tech: ["Rust"],
-        lib: []
     },
     {
         icon: "fab fa-app-store-ios",
@@ -253,16 +247,12 @@ const experiences = [
         position: "Team Lead and Full Stack Developer",
         company: "Netzary Infodynamics",
         duration: "Jul 2017 - Sep 2020",
-        tech: ["Django", "Android (Native)", "Flutter", "React.JS"],
+        tech: ["Python (Django)", "Android (Native)", "Flutter", "React.JS"],
         achievements: [
             "Supervised and managed all the activities within the team",
-            "Identified team goal and evaluated their progress",
-            "Coached team members to develop necessary skills",
             "Delegated tasks to individual team members comprehending their abilities",
-            "Helped the team accomplish the set goals",
             "Developed applications for Android and iOS using native as well as hybrid tool (Flutter)",
             "Developed applications for Web with Python on top of Django framework",
-            "Designed elegant and user-friendly interfaces for mobiles and web",
             "Produced clean, efficient code based requirement specifications",
             "Integrated software components and third-party APIs",
             "Tested and deployed programs and/or systems",
@@ -346,15 +336,15 @@ const personalProjects = [
         ]
     },
     {
-        name: "PopupMenu (not maintained)",
-        description: "Customizable android popup menu with support support for icons",
-        duration: "Sep 2018",
-        tech: ["Android", "Kotlin"],
+        name: "Other packages (not maintained)",
+        description: "Customized packages for android, web, flutter, etc.",
+        duration: "-",
+        tech: ["Python", "Kotlin", "Dart", "JavaScript"],
         refs: [
             {
                 icon: "fa fa-link",
                 tooltip: "Check it out",
-                url: "https://github.com/rajyadavnp/PopupMenu"
+                url: "https://github.com/lazydeveloperdotdev?tab=repositories"
             }
         ]
     },

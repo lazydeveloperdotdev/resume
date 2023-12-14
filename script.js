@@ -290,7 +290,7 @@ const buildProjects = (projects, isNonPersonal = false) => {
 
 const buildFooter = (details) => {
     let element = document.querySelectorAll(".footer>.container-inner");
-    let {sns, qrCode} = details;
+    let {sns, qrCode, updateDate} = details;
     let html = "<div class='pull-left'>";
     if (sns.length > 0) {
         html += "<h3>Find me on:</h3>" +
@@ -308,7 +308,7 @@ const buildFooter = (details) => {
     }
     html += "<div class='clear'></div>" +
         "<h6 class='mt-10 updated-date'>Last updated: " +
-        new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: '2-digit'}) +
+        new Date(updateDate).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: '2-digit'}) +
         "</h6>" +
         "</div>";
     html += "<div class='pull-right'>";
