@@ -19,7 +19,7 @@ const userDetails = {
     {
       icon: "fa fa-map-marker-alt",
       tooltip: "View in maps",
-      label: "JP Nagar Phase 5, Bangalore, India",
+      label: "JP Nagar, Bangalore, India",
       link: "https://goo.gl/maps/srwPcAxy5S32",
     },
     {
