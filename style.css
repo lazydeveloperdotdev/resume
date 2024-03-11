@@ -5,29 +5,33 @@
     --card: #ffffff;
     --card55: #ffffff55;
     --card11: #ffffff11;
-    --text: #252545;
-    --text55: #25254555;
-    --text11: #25254511;
+    --text: #252530;
+    --text55: #25253055;
+    --text11: #25253011;
+    --text22: #25254522;
     --altText: #ffffff;
     --header: #4775ba;
+    --header22: #4775ba22;
     --headerText: #ffffff;
     --headerAlt: #385d95;
     --headerAltText: #ffffff;
     --accent: #4fc996;
     --accent55: #4fc99655;
     --accent11: #4fc99611;
+    --accent33: #4fc99633;
     --grey: #888888;
     --isLight: 1;
 }
 
 [data-theme=dark] {
-    --bg: #20202f;
-    --card: #0e0e15;
-    --card55: #0e0e1555;
+    --bg: #000000;
+    --card: #151518;
+    --card55: #18182055;
     --card11: #0e0e1511;
     --text: #ffffff;
     --text55: #ffffff55;
     --text11: #ffffff11;
+    --text22: #ffffff33;
     --altText: #ffffff;
     --header: #7e9ecf;
     --headerText: #ffffff;
@@ -74,7 +78,7 @@ html, body {
 
 .splash {
     position: fixed;
-    background: linear-gradient(to top, var(--accent), var(--header));
+    background: linear-gradient(to left top, var(--text), var(--header));
     width: 100%;
     height: 100%;
     margin: 0;
@@ -91,7 +95,9 @@ html, body {
     object-position: center;
     width: 60vw;
     height: 70vw;
+    scale: 1.4;
     border: 5px solid rgba(255, 255, 255, 0.5);
+    clip-path: url("#avatarClip");
 }
 
 .splash.animate {
@@ -140,10 +146,11 @@ p, a {
 }
 
 img.avatar {
-    width: 75px;
-    height: 95px;
+    width: 90px;
+    height: 100px;
+    scale: 1.4;
+    clip-path: url("#avatarClip");
     object-fit: cover;
-    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -152,41 +159,51 @@ img.avatar {
 }
 
 .left-header svg path {
-    fill: var(--card);
+    fill: var(--text);
 }
 
 .left-header i.fa {
-    color: var(--card);
+    color: var(--text);
     margin-right: 5px;
 }
 
 .left-header a,
 .left-header a:link {
-    color: var(--card);
+    color: var(--text);
     text-decoration: none;
 }
 
 .left-header a:hover {
-    color: var(--accent);
+    color: var(--header);
 }
 
 .footer {
     border-top: 1px solid var(--text55);
     max-width: 1020px;
     width: 100%;
-    margin: 150px auto 0;
+    margin: 400px auto 0;
     padding: 15px 0;
     bottom: 0;
 }
 
 .screen40 .footer {
-    border-color: var(--card55);
+    border-color: var(--text22);
 }
 
 .screen40 {
     width: 40%;
     float: left;
-    background: linear-gradient(to bottom right, var(--header) 30%, var(--accent) 130%);
+}
+
+.with-bg {
+    background: var(--header22);
+}
+
+.clip-bg {
+    padding-top: 30px;
+    background: var(--header22);
+    clip-path: url("#sideClip");
+    padding-bottom: 12px;
 }
 
 .screen50 {
@@ -216,20 +233,44 @@ img.avatar {
     margin: 0 20px 0 10px;
 }
 
-.block-section {
-    margin: 20px 0;
-}
-
 
 .block-section h2 {
+    color: var(--header);
     text-transform: uppercase;
-    background: linear-gradient(to right, var(--header) 20%, var(--accent), var(--accent55), var(--accent11), transparent);
-    color: var(--altText);
-    margin: 5px 0;
+    padding: 5px 0;
     font-size: 16px;
-    padding: 5px;
+    font-weight: bold;
 }
 
+.scale {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.scale > span {
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+    border-radius: 20px;
+    background: var(--text22);
+}
+
+.scale > span.yes {
+    background: var(--header);
+}
+
+.scale-5 {
+    flex: 5;
+}
+
+.scale-4 {
+    flex: 4;
+}
+
+.scale-o-4 {
+    flex: 1;
+}
 
 .block-section table {
     table-layout: fixed;
@@ -254,46 +295,54 @@ table .description, table .description > p {
 
 
 table .emphasis {
-    color: var(--accent);
+    color: var(--header);
     font-style: italic;
     font-size: 11px;
 }
 
-.screen40 .block-section h2 {
-    background: linear-gradient(to right, var(--card), var(--card55), var(--card11), transparent);
-    color: var(--header);
-}
 
 .screen40 table .emphasis {
-    color: var(--card);
+    color: var(--text);
     opacity: 0.6;
 }
 
 .screen40 table .title,
 .screen40 table .icon,
 .screen40 table .text-icon {
-    color: var(--card);
+    color: var(--text);
 }
 
 .screen40 ul.tags > li {
-    background: var(--card);
-    border-color: var(--card);
-    color: var(--headerAlt);
-
+    background: var(--text22);
+    border-color: transparent;
+    color: var(--text);
 }
 
 .screen40 ul.tags > li.o,
 .screen40 ul.tags.bordered > li {
-    color: var(--card);
-    border-color: var(--card);
+    color: var(--text);
+    border-color: var(--text22);
 }
 
 .screen40 .fa-square-full {
     color: var(--card);
 }
 
-.header {
-    background: linear-gradient(to bottom right, var(--header), var(--headerAlt), var(--header));
+
+.screen60 .on-laptop {
+    background: var(--header22);
+    border-bottom-left-radius: 30px;
+}
+
+.circle-bg {
+    position: absolute;
+    right: -50px;
+    top: -100px;
+    z-index: 0;
+    height: 200px;
+    width: 200px;
+    background: var(--header22);
+    clip-path: circle(50%);
 }
 
 table .strong {
@@ -371,7 +420,7 @@ table .text-icon {
 }
 
 table .progress {
-    width: 100px;
+    width: 80px;
     text-align: right;
 }
 
@@ -388,26 +437,24 @@ ul.tags > li {
     list-style-type: none;
     float: left;
     font-size: 11px;
-    background: var(--accent);
+    background: var(--header22);
     margin: 2px;
-    padding: 2px 5px;
-    color: var(--card);
-    border: 1px solid var(--accent);
+    padding: 2px 7px;
+    color: var(--header);
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 
 ul.tags > li.o {
-    list-style-type: none;
-    float: left;
-    font-size: 11px;
-    color: var(--accent);
+    color: var(--header);
     margin: 2px;
-    padding: 2px 5px;
+    padding: 2px 7px;
     background: none;
 }
 
 ul.tags.bordered > li {
-    border: 1px solid var(--accent);
-    color: var(--accent);
+    border: 1px solid var(--header);
+    color: var(--header);
     background: none;
 }
 
@@ -443,7 +490,7 @@ ul.social > li a:link {
 
 .screen40 ul.social > li a,
 .screen40 ul.social > li a:link {
-    color: var(--card);
+    color: var(--text);
 }
 
 
@@ -452,7 +499,7 @@ ul.social > li a:hover {
 }
 
 ul.social > li a.Lazy-Developer:hover {
-    color: var(--accent);
+    color: var(--header);
 }
 
 ul.social > li a.Github:hover {
@@ -485,7 +532,7 @@ ul.social > li a.Quora:hover {
 }
 
 .screen40 .footer h3 {
-    color: var(--card);
+    color: var(--header);
 }
 
 a:link, a {
@@ -503,6 +550,10 @@ a:link, a {
 @media screen and (max-width: 874px) {
     .screen40, .screen50, .screen60 {
         width: 100%;
+    }
+
+    .with-bg {
+        padding-bottom: 10px;
     }
 
     .container-inner {
@@ -557,7 +608,7 @@ a:link, a {
     display: inline-block;
     background: url("https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png") 0 0 no-repeat;
     background-size: auto 13px;
-    filter: brightness(0) invert(var(--isLight));
+    filter: brightness(0) invert(var(--card));
 }
 
 .icon-button {
@@ -597,13 +648,17 @@ a:link, a {
     opacity: 0.6;
 }
 
+.username h2 {
+    letter-spacing: 3px;
+}
+
 .screen40 .username h2,
 .screen40 .username h4 {
-    color: var(--card);
+    color: var(--text);
 }
 
 .screen40 .username p {
-    color: var(--card);
+    color: var(--text);
 }
 
 .float-button,
@@ -614,7 +669,7 @@ a:link, a {
     padding: 8px 16px;
     color: white;
     text-decoration: none;
-    background: var(--accent);
+    background: var(--header);
     box-shadow: 2px 2px 3px #00000022;
 }
 
@@ -622,7 +677,7 @@ a:link, a {
 hr {
     height: 1px;
     border: none;
-    background: var(--text55);
+    background: var(--header22);
     opacity: 0.6;
 }
 
@@ -633,7 +688,6 @@ hr {
 hr.light {
     height: 1px;
     border: none;
-    background: var(--card55);
     margin: 15px 10px 10px 10px;
 }
 
@@ -648,7 +702,7 @@ hr.light {
 .fab-icons > button {
     width: 36px;
     height: 36px;
-    background: var(--accent);
+    background: var(--header);
     border: none;
     border-radius: 50%;
     font-size: large;
@@ -665,12 +719,13 @@ hr.light {
 
 .qr {
     background: var(--card);
+    padding: 5px;
 }
 
 .updated-date {
     font-size: x-small;
     font-weight: normal;
-    color: var(--card);
+    color: var(--text);
     opacity: 0.6;
     font-style: italic;
 }
@@ -684,6 +739,15 @@ hr.light {
         background: var(--card);
         position: relative;
         -webkit-print-color-adjust: exact;
+    }
+
+    .clip-bg {
+        height: 84.5vh;
+        padding-bottom: 0;
+    }
+
+    .with-bg {
+        height: 100vh;
     }
 
     .float-button {
@@ -713,7 +777,7 @@ hr.light {
     }
 
     .break.extra-margin {
-        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .last {
