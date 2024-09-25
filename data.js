@@ -3,7 +3,7 @@ const userDetails = {
     designation: "Full Stack Software Developer",
     description: "A multi-skilled and dedicated IT professional with over %expYears% years of experience, adept in software development, well-versed in different programming languages. Well-rounded experience in OOPs, mobile development and user-centered design. A prodigy in learning new technologies. Strong background in team management and delegation.",
     picture: {
-        src: "raj.jpeg", link: "https://www.linkedin.com/in/lazydeveloperdotdev",
+        src: "raj.jpg", link: "https://www.linkedin.com/in/lazydeveloperdotdev",
     },
     startDate: "01 Jul 2017",
     updateDate: "11 Mar 2024",
