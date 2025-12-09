@@ -115,7 +115,7 @@ const buildBottomHeader = (details) => {
 };
 const buildSkills = (skills) => {
     let element = document.querySelector(".skill-set");
-    let html = "<h2>Technical Focus</h2>";
+    let html = "<h2>Skills</h2>";
     for (let i = 0; i < skills.length; i++) {
         let {printBreak, icon, title, since, till, scale, tech, lib} = skills[i];
         if (printBreak === true) {
