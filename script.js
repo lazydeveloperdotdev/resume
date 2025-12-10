@@ -96,7 +96,7 @@ const buildTopHeader = (details) => {
     let {name, description, designation, startDate} = details;
 
     description = description.replaceAll("%expYears%", getYears(startDate));
-    let html = "<table class='username'>" + "<tr>" + "<td>" + "<h2>" + name + "</h2>" + "<h4>" + designation + "</h4>" + "</td>" + picHtml + "</tr>" + "<tr>" + "<td>" + "<p class='justify'>" + description + "</p>" + "</td>" + "</tr>" + "</table>";
+    let html = "<table class='username'>" + "<tr>" + "<td>" + "<h1>" + name + "</h1>" + "<h3>" + designation + "</h3>" + "</td>" + picHtml + "</tr>" + "<tr>" + "<td>" + "<p class='justify'>" + description + "</p>" + "</td>" + "</tr>" + "</table>";
     for (let i = 0; i < element.length; i++) {
         element[i].innerHTML = html;
     }
@@ -116,10 +116,13 @@ const buildBottomHeader = (details) => {
 const buildSkills = (skills) => {
     let element = document.querySelector(".skill-set");
     let html = "<h2>Skills</h2>";
+    let html2 = "";
+    let element2;
     for (let i = 0; i < skills.length; i++) {
         let {printBreak, icon, title, since, till, scale, tech, lib} = skills[i];
         if (printBreak === true) {
-            html += "<div class='break extra-margin'></div>" + "<h2>Skills</h2>";
+            element2 = document.querySelector(".skill-set2");
+            html2 += "<div class='break extra-margin'></div>" + "<h2>Skills</h2>";
         }
         let techHtml = "";
         for (let x = 0; x < tech.length; x++) {
@@ -129,17 +132,25 @@ const buildSkills = (skills) => {
             techHtml += "<li class='o'>" + lib[x] + "</li>";
         }
         let iconHtml = !icon.startsWith("fa") ? icon : "<i class='" + icon + "'></i>";
-
-        html += "<table>" + "<tr>" + "<td class='icon'>" + iconHtml + "</td>" + "<td class='title'>" + title + _buildYears(since, till) + "</td>" + "<td class='progress'>" + _buildScale(scale) + "</td></tr>" + "<tr>" + "<td></td>" + "<td colspan='2' class='skills'>" + "<ul class='tags'>" + techHtml + "</ul>" + "</td></tr></table>";
+        let content = "<table>" + "<tr>" + "<td class='icon'>" + iconHtml + "</td>" + "<td class='title'>" + title + _buildYears(since, till) + "</td>" + "<td class='progress'>" + _buildScale(scale) + "</td></tr>" + "<tr>" + "<td></td>" + "<td colspan='2' class='skills'>" + "<ul class='tags'>" + techHtml + "</ul>" + "</td></tr></table>";
+        if (html2) {
+            html2 += content;
+        } else {
+            html += content;
+        }
     }
     element.innerHTML = html;
+    if (element2 && html2) {
+        html2 += "</div></div></div>";
+        element2.innerHTML = html2;
+    }
 };
 const buildLanguages = (languages) => {
     let element = document.querySelector(".languages");
     let html = "<h2>Languages</h2>";
     for (let i = 0; i < languages.length; i++) {
         let {icon, name, scale, proficiency} = languages[i];
-        html += "<table>" + "<tr>" + "<td rowspan='2' class='text-icon'>" + icon + "</td>" + "<td class='title'>" + name + "</td>" + "<td class='progress'>" + _buildScale(scale) + "</td></tr>" + "<tr>" + "<td colspan='2' class='emphasis'>" + proficiency + "</td>" + "</tr></table>";
+        html += "<table>" + "<tr>" + "<td rowspan='2' class='flag-icon'><img alt='' src='" + icon + "' /></td>" + "<td class='title'>" + name + "</td>" + "<td class='progress'>" + _buildScale(scale) + "</td></tr>" + "<tr>" + "<td colspan='2' class='emphasis'>" + proficiency + "</td>" + "</tr></table>";
     }
     element.innerHTML = html;
 };
@@ -256,6 +267,6 @@ const themeChangeListener = () => {
 document.addEventListener("DOMContentLoaded", themeChangeListener);
 
 const toggleTheme = () => {
-    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "");
+    document.documentElement.setAttribute("data-theme", isDark ? "" : "dark");
     isDark = !isDark;
 };

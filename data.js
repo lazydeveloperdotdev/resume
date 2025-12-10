@@ -6,9 +6,9 @@ const userDetails = {
         src: "raj.jpg", link: "https://www.linkedin.com/in/lazydeveloperdotdev",
     },
     startDate: "01 Jul 2017",
-    updateDate: "11 Mar 2024",
+    updateDate: "11 Dec 2025",
     links: [{
-        icon: "fa fa-envelope-open",
+        icon: "fa fa-at",
         tooltip: "Send mail",
         label: "rajyadav_np@outlook.com",
         link: "mailto:rajyadav_np@outlook.com?subject=Job%20offer",
@@ -16,11 +16,11 @@ const userDetails = {
         icon: "fa fa-map-marker-alt",
         tooltip: "View in maps",
         label: "Bangalore, India",
-        link: "https://goo.gl/maps/srwPcAxy5S32",
+        link: "https://maps.app.goo.gl/pux7EqEUnDoRKnNs8",
     }, {
-        icon: "fa fa-mobile-alt", tooltip: "Call", label: "+91-733 8305986", link: "tel:+917338305986",
+        icon: "fa fa-phone", tooltip: "Call", label: "+91-733 8305986", link: "tel:+917338305986",
     }, {
-        icon: "fa fa-globe", tooltip: "Visit", label: "www.lazydeveloper.dev", link: "https://www.lazydeveloper.dev",
+        icon: "fa fa-link", tooltip: "Visit", label: "www.lazydeveloper.dev", link: "https://www.lazydeveloper.dev",
     },],
     sns: [{
         icon: "fa fa-link", tooltip: "Lazy Developer", link: "https://lazydeveloper.dev",
@@ -39,7 +39,7 @@ const userDetails = {
 };
 
 const skills = [{
-    icon: "fa fa-project-diagram",
+    icon: "fa fa-cubes",
     title: "System Design & Architecture",
     scale: 5,
     since: "01-10-2020",
@@ -58,7 +58,7 @@ const skills = [{
     scale: 5,
     since: "11-01-2017",
     till: "",
-    tech: ["ReactJS", "Flutter", "Android"],
+    tech: ["React.JS", "Flutter", "Android"],
     lib: ["Performance Optimizations", "Lazy Loading"],
 }, {
     icon: "fa fa-database",
@@ -88,24 +88,31 @@ const skills = [{
     tech: ["Technical Leadership", "Architecture Review", "Engineering Standards"],
     lib: ["Code Review", "Mentorship", "Team Building"],
 }, {
-    icon: "fab fa-git-alt",
+    icon: "fa fa-code-branch",
     title: "VCS & Project Management",
     since: "01-07-2017",
     scale: 5,
+    printBreak: true,
     tech: ["Git"],
     lib: ["Jira", "Confluence"],
 },];
 
 const languages = [{
-    icon: "A", name: "English", scale: 5, proficiency: "Full Professional Proficiency",
+    icon: "https://flagsapi.com/US/flat/32.png",
+    name: "English",
+    scale: 5,
+    proficiency: "Full Professional Proficiency",
 }, {
-    icon: "&#x0905;", name: "Hindi", scale: 5, proficiency: "Full Professional Proficiency",
+    icon: "https://flagsapi.com/IN/flat/32.png", name: "Hindi", scale: 5, proficiency: "Full Professional Proficiency",
 }, {
-    icon: "&#x0905;", name: "Nepali", scale: 5, proficiency: "Native or Bilingual Proficiency",
+    icon: "https://flagsapi.com/NP/flat/32.png",
+    name: "Nepali",
+    scale: 5,
+    proficiency: "Native or Bilingual Proficiency",
 },];
 
 const interests = [{
-    icon: "fa fa-swimming-pool", title: "Swimming",
+    icon: "fa fa-person-swimming", title: "Swimming",
 }, {
     icon: "fa fa-paint-brush", title: "Sketching",
 }, {
@@ -116,50 +123,42 @@ const experiences = [{
     position: "Staff Engineer",
     company: "Sanas.AI, Bangalore",
     duration: "Feb 2023 - Present",
-    tech: ["OAuth/SSO", "Go", "React.JS", "Flutter", "ClickHouse"],
-    achievements: [
-        "Architected and owned a multi-client SSO authentication and authorization platform used across multiple products.",
-        "Designed analytics architecture using ClickHouse, achieving 80-90% improvement in query performance.",
-        "Led schema and infrastructure optimizations for multi-tenant systems, resulting in ~30% cost reduction.",
-        "Defined and enforced backend architecture standards (onion architecture) across engineering teams.",
-        "Established observability and monitoring practices, reducing MTTR by ~60%.",
-        "Improved end-to-end system performance across backend and frontend, including reducing frontend re-renders and application load times.",
-        "Mentored senior engineers and led system design and architecture reviews."
-    ],
+    tech: ["Go", "OAuth2 / SSO", "AWS", "ClickHouse", "React.JS", "Flutter",],
+    achievements: ["Architected and owned a multi-client OAuth2/SSO platform powering authentication across multiple products.", "Designed analytics systems using ClickHouse, achieving 80-90% query performance improvements.", "Led multi-tenant schema and infrastructure optimizations, driving ~30% reduction in platform costs.", "Defined backend architecture standards (onion architecture) and led system design reviews across teams.", "Established observability and monitoring practices, reducing MTTR by ~60%.", "Improved end-to-end performance across backend and frontend, including API latency and frontend rendering.", "Mentored senior engineers and provided technical leadership on scalability and reliability initiatives."],
 }, {
-    position: "Full Stack - SDE III",
+    position: "SDE III (Full Stack)",
     company: "ShopUp, Bangalore",
     duration: "Dec 2022 - Jan 2023",
-    tech: ["Go", "gRPC", "AWS", "React.JS", "Flutter", "Android (Native)"],
-    achievements: ["Designed microservices architecture using Golang (gRPC) for high-throughput, low-latency backend systems handling 10K+ requests per second.", "Architected cross-platform mobile solutions using Flutter, reducing development time by 50% while maintaining native-level performance.", "Built scalable web applications with React.JS, focusing on component reusability and optimal rendering performance.", "Led technical initiatives across cross-functional teams, driving architectural decisions that improved system reliability and developer velocity.", "Established design patterns and architectural guidelines that became engineering standards across multiple teams.",],
+    tech: ["Go", "gRPC", "AWS", "React.JS", "Flutter", "Android"],
+    achievements: ["Designed high-throughput microservices using Go and gRPC, handling 10K+ requests per second.", "Architected cross-platform mobile applications with Flutter, reducing development time by 50%.", "Built scalable React.JS web applications with focus on performance and component reusability.", "Led cross-team technical initiatives, improving system reliability and developer productivity.", "Established architectural patterns and design guidelines adopted across multiple teams."],
 }, {
-    position: "Full Stack - SDE II",
+    position: "SDE II (Full Stack)",
     company: "Falabella, Bangalore",
     duration: "Oct 2020 - Nov 2022",
-    tech: ["Python (Django)", "GCP", "Flutter", "React.JS"],
-    achievements: ["Designed and implemented event-driven microservices using Django and GCP Pub/Sub, supporting 1M+ daily transactions.", "Architected Flutter applications with clean architecture principles, enabling rapid feature development and seamless cross-platform experiences.", "Built responsive web interfaces with React.JS, improving user engagement metrics by 35% through performance optimization.", "Established comprehensive testing strategies and CI/CD pipelines, reducing production incidents by 45%.", "Led technical design reviews and architecture discussions, ensuring alignment with business objectives and scalability requirements.", "Integrated complex third-party systems and APIs, creating abstraction layers that simplified future integrations.", "Optimized critical database queries and implemented caching strategies, reducing response times by 60%.",],
+    tech: ["Python", "GCP", "Flutter", "React.JS"],
+    achievements: ["Architected event-driven microservices using Django and GCP Pub/Sub, supporting 1M+ daily transactions.", "Defined clean architecture for Flutter applications, improving maintainability and release velocity.", "Led React.JS frontend performance optimization, increasing user engagement by 35%.", "Established automated testing and CI/CD pipelines, reducing production incidents by 45%.", "Owned system design decisions and scalability planning aligned with business requirements.", "Optimized database queries and caching strategies, reducing response times by 60%."],
 }, {
-    position: "Team Lead and Full Stack Developer",
+    position: "Team Lead & SDE (Full Stack)",
     company: "Netzary Infodynamics",
     duration: "Jul 2017 - Sep 2020",
     printBreak: true,
-    tech: ["Python (Django)", "NGINX", "E2E Networks", "Android (Native)", "Flutter", "React.JS"],
-    achievements: ["Led engineering team of 5+ developers, coordinating project delivery and establishing development standards and workflows.", "Architected and delivered mobile applications for Android and iOS using both native and Flutter frameworks, serving 50K+ users.", "Designed scalable backend systems using Django and PostgreSQL, handling complex business logic and data processing.", "Established code quality practices including comprehensive testing, code reviews, and technical documentation standards.", "Integrated multiple third-party services and APIs, creating unified interfaces for seamless data flow across systems.", "Drove technical decisions on architecture, technology stack selection, and development processes.", "Mentored junior developers on best practices, design patterns, and problem-solving approaches.",],
-},];
+    tech: ["Python", "NGINX", "E2E Networks", "Android", "Flutter", "React.JS"],
+    achievements: ["Led a team of 5+ engineers, delivering multiple web and mobile products end-to-end.", "Architected and delivered Android, iOS, and Flutter applications serving 50K+ users.", "Designed scalable backend systems with Django and PostgreSQL for complex business workflows.", "Established engineering best practices including testing, code reviews, and documentation.", "Integrated multiple third-party APIs, designing abstraction layers for scalable integrations.", "Mentored junior engineers on system design, clean code, and software engineering fundamentals."],
+}];
 
 const education = [{
     board: "Bangalore University",
     school: "RR Institutions/Bangalore, IN",
     concentration: "Bachelor of Computer Application",
     percentage: 86,
-    duration: "Apr 2014 - Jun 2017",
+    duration: "April 2014 - June 2017",
     achievements: ["Developed Android application with Django backend for university cultural event, demonstrating early full-stack capabilities.", "Designed online University data processing system using ASP MVC and MS SQL Express, showcasing system design skills.", "Won inter-college application development competition, demonstrating technical excellence and competitive edge.",],
 }, {
     board: "Higher Secondary Education Board (HSEB)",
     school: "Dang Valley College/Dang, Nepal",
     concentration: "10+2 (Science - PCM)",
     percentage: 53,
-    duration: "Apr 2011 - Mar 2013",
+    duration: "April 2011 - March 2013",
     achievements: [],
 
 }, {
@@ -167,7 +166,7 @@ const education = [{
     school: "Buddha Jyoti HSS/Gadhawa, Nepal",
     concentration: "School Leaving Certificate (SLC)",
     percentage: 68,
-    duration: "Apr 1999 - Mar 2011",
+    duration: "April 1999 - March 2011",
     achievements: [],
 },];
 
