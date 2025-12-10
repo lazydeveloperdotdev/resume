@@ -126,19 +126,19 @@ const experiences = [{
     tech: ["Go", "OAuth2 / SSO", "AWS", "ClickHouse", "React.JS", "Flutter",],
     achievements: ["Architected and owned a multi-client OAuth2/SSO platform powering authentication across multiple products.", "Designed analytics systems using ClickHouse, achieving 80-90% query performance improvements.", "Led multi-tenant schema and infrastructure optimizations, driving ~30% reduction in platform costs.", "Defined backend architecture standards (onion architecture) and led system design reviews across teams.", "Established observability and monitoring practices, reducing MTTR by ~60%.", "Improved end-to-end performance across backend and frontend, including API latency and frontend rendering.", "Mentored senior engineers and provided technical leadership on scalability and reliability initiatives."],
 }, {
-    position: "SDE III (Full Stack)",
+    position: "SDE III",
     company: "ShopUp, Bangalore",
     duration: "Dec 2022 - Jan 2023",
     tech: ["Go", "gRPC", "AWS", "React.JS", "Flutter", "Android"],
     achievements: ["Designed high-throughput microservices using Go and gRPC, handling 10K+ requests per second.", "Architected cross-platform mobile applications with Flutter, reducing development time by 50%.", "Built scalable React.JS web applications with focus on performance and component reusability.", "Led cross-team technical initiatives, improving system reliability and developer productivity.", "Established architectural patterns and design guidelines adopted across multiple teams."],
 }, {
-    position: "SDE II (Full Stack)",
+    position: "SDE II",
     company: "Falabella, Bangalore",
     duration: "Oct 2020 - Nov 2022",
     tech: ["Python", "GCP", "Flutter", "React.JS"],
     achievements: ["Architected event-driven microservices using Django and GCP Pub/Sub, supporting 1M+ daily transactions.", "Defined clean architecture for Flutter applications, improving maintainability and release velocity.", "Led React.JS frontend performance optimization, increasing user engagement by 35%.", "Established automated testing and CI/CD pipelines, reducing production incidents by 45%.", "Owned system design decisions and scalability planning aligned with business requirements.", "Optimized database queries and caching strategies, reducing response times by 60%."],
 }, {
-    position: "Team Lead & SDE (Full Stack)",
+    position: "Team Lead & SDE",
     company: "Netzary Infodynamics",
     duration: "Jul 2017 - Sep 2020",
     printBreak: true,
