@@ -122,13 +122,13 @@ const interests = [{
 const experiences = [{
     position: "Staff Engineer",
     company: "Sanas.AI, Bangalore",
-    duration: "Feb 2023 - Present",
+    duration: "Feb 2024 - Present",
     tech: ["Go", "OAuth2 / SSO", "AWS", "ClickHouse", "React.JS", "Flutter",],
     achievements: ["Architected and owned a multi-client OAuth2/SSO platform powering authentication across multiple products.", "Designed analytics systems using ClickHouse, achieving 80-90% query performance improvements.", "Led multi-tenant schema and infrastructure optimizations, driving ~30% reduction in platform costs.", "Defined backend architecture standards (onion architecture) and led system design reviews across teams.", "Established observability and monitoring practices, reducing MTTR by ~60%.", "Improved end-to-end performance across backend and frontend, including API latency and frontend rendering.", "Mentored senior engineers and provided technical leadership on scalability and reliability initiatives."],
 }, {
     position: "SDE III",
     company: "ShopUp, Bangalore",
-    duration: "Dec 2022 - Jan 2023",
+    duration: "Dec 2022 - Jan 2024",
     tech: ["Go", "gRPC", "AWS", "React.JS", "Flutter", "Android"],
     achievements: ["Designed high-throughput microservices using Go and gRPC, handling 10K+ requests per second.", "Architected cross-platform mobile applications with Flutter, reducing development time by 50%.", "Built scalable React.JS web applications with focus on performance and component reusability.", "Led cross-team technical initiatives, improving system reliability and developer productivity.", "Established architectural patterns and design guidelines adopted across multiple teams."],
 }, {
